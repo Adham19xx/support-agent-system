@@ -6,6 +6,8 @@ from tools import (
     create_ticket
 )
 
+from prompt import SYSTEM_PROMPT
+
 import os
 
 

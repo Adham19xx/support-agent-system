@@ -50,3 +50,22 @@ project/
 ├── README.md
 └── .gitignore
 ```
+
+## How to Run
+
+### Reactive System
+
+cd reactive
+python main.py
+### Deterministic Routing
+
+cd deterministic
+python main.py
+### Unconstrained LLM Agent
+
+cd unconstrained
+python main.py
+### Constrained ReAct Agent
+
+cd constrained
+python main.py

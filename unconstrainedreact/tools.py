@@ -1,4 +1,4 @@
-def get_user_info(user_id):
+def get_user_info(user_id: int):
 
     if user_id == 1:
         return {
@@ -22,7 +22,7 @@ def get_user_info(user_id):
         }
 
 
-def search_bug_database(issue):
+def search_bug_database(issue:str):
 
     if "crash" in issue.lower():
         return {
@@ -36,6 +36,6 @@ def search_bug_database(issue):
     }
 
 
-def create_ticket(priority):
+def create_ticket(priority:str):
 
     return f"Ticket created successfully with {priority} priority."

@@ -28,12 +28,11 @@ Uses tools, schemas, and maximum steps to control reasoning.
 More reliable and structured while maintaining flexibility.
 
 ## Project Structure
+```
 project/
 ├── reactive/
 ├── deterministic/
 ├── unconstrained/
 ├── constrained/
-├── README.md
-├── requirements.txt
-└── .env.example
-
+└── README.md
+```

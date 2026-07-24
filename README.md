@@ -11,7 +11,7 @@ This project compares four different AI agent architectures for solving customer
 
   ## AI Agent Approaches
   
-  ### 1. Reactive System
+### 1. Reactive System
 Uses hard-coded if/else rules.
 Fast and simple, but less flexible.
 

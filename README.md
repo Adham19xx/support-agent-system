@@ -24,6 +24,8 @@ Uses LLM reasoning without strict limitations.
 Highly flexible, but may be slower and more expensive.
 
 ### 4. Constrained ReAct Agent
+Uses tools, schemas, and maximum steps to control reasoning.
+More reliable and structured while maintaining flexibility.
 
 ## Project Structure
 project/
@@ -34,5 +36,4 @@ project/
 ├── README.md
 ├── requirements.txt
 └── .env.example
-Uses tools, schemas, and maximum steps to control reasoning.
-More reliable and structured while maintaining flexibility.
+

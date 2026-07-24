@@ -20,6 +20,18 @@ tools = [
     create_ticket
 ]
 
+
+available_tools = {
+
+    "get_user_info": get_user_info,
+
+    "search_bug_database": search_bug_database,
+
+    "create_ticket": create_ticket
+}
+
+
+
 def run_agent(user_message):
 
     response = client.models.generate_content(
@@ -34,4 +46,26 @@ def run_agent(user_message):
     for part in response.candidates[0].content.parts:
 
         if part.function_call:
-            print("Gemini wants to use a tool")
+
+            tool_name = part.function_call.name
+
+            arguments = part.function_call.args
+
+            tool = available_tools[tool_name]
+
+            tool_result = tool(**arguments)
+
+
+            final_response = client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=[
+                    user_message,
+                    tool_result
+                ],
+                config={
+                    "tools": tools
+                }
+            )
+
+
+            return final_response.text

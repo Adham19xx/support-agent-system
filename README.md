@@ -55,8 +55,8 @@ project/
 
 ### Reactive System
 
-cd reactive
-python main.py
+Navigate to Visual code and run
+
 ### Deterministic Routing
 
 cd deterministic

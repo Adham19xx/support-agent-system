@@ -31,8 +31,22 @@ More reliable and structured while maintaining flexibility.
 ```
 project/
 ├── reactive/
+│   ├── main.py
+│   ├── README.md
 ├── deterministic/
+│   ├── main.py
+│   └── README.md
 ├── unconstrained/
+│   ├── main.py
+│   ├── prompt.py
+│   ├── tools.py
+│   ├── .env
+│   ├── agent.py
+│   └── requirements.txt
 ├── constrained/
-└── README.md
+│   ├── main.py
+│   ├── prompt.py
+│   └── tools.py
+├── README.md
+└── .gitignore
 ```

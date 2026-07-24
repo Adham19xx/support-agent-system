@@ -59,15 +59,15 @@ def run_agent(user_message):
 
 
             final_response = client.models.generate_content(
-                model="gemini-2.5-flash",
-                contents=[
-                    user_message,
-                    tool_result
-                ],
-                config={
-                    "tools": tools
-                }
-            )
-
+    model="gemini-2.5-flash",
+    contents=[
+        user_message,
+        tool_result
+    ],
+    config={
+        "system_instruction": SYSTEM_PROMPT,
+        "tools": tools
+    }
+)
 
             return final_response.text

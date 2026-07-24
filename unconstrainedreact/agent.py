@@ -7,13 +7,17 @@ from tools import (
 )
 
 from prompt import SYSTEM_PROMPT
-
 import os
+from dotenv import load_dotenv
 
+load_dotenv(dotenv_path=r"C:\Users\A.M sherif\Downloads\support-agent-system-main\support-agent-system-main\unconstrainedreact\.env")
+
+print("KEY:", os.getenv("GEMINI_API_KEY"))
 
 client = genai.Client(
     api_key=os.getenv("GEMINI_API_KEY")
 )
+
 
 
 tools = [

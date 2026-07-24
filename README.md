@@ -59,12 +59,18 @@ Navigate to Visual code and run
 
 ### Deterministic Routing
 
-cd deterministic
-python main.py
+1. Ensure your `.env` file exists in the root directory and contains `GEMINI_API_KEY`.
+2. Install google-genai and python-dotenv in python
+3. 
 ### Unconstrained LLM Agent
 
+Install dependencies, add your API key to the .env file, then run:
+
+`bash
+pip install -r requirements.txt
 cd unconstrained
 python main.py
+
 ### Constrained ReAct Agent
 
 cd constrained

@@ -19,7 +19,6 @@ client = genai.Client(
 )
 
 
-
 tools = [
     get_user_info,
     search_bug_database,
@@ -41,7 +40,7 @@ available_tools = {
 def run_agent(user_message):
 
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-2.0-flash",
         contents=user_message,
         config={
             "tools": tools
